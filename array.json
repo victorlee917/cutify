@@ -1,1 +1,20 @@
-[{ "a": "a", "b": "b", "c": "c" }]
+[
+  {
+    "category": "images/category/dummy_img.png",
+    "thumbnail": "images/category/dummy_img.png",
+    "title": "귀여운 댕댕이",
+    "desc": "귀여운 댕대잉의 동영상입니다",
+    "channel": "instagram",
+    "author": "댕댕쓰",
+    "url": "https://google.com"
+  },
+  {
+    "category": "images/category/dummy_img.png",
+    "thumbnail": "images/category/dummy_img.png",
+    "title": "귀여운 댕댕이2",
+    "desc": "귀여운 댕대잉의 동영상입니다",
+    "channel": "instagram",
+    "author": "댕댕쓰",
+    "url": "https://google.com"
+  }
+]
