@@ -1,7 +1,7 @@
 [
   {
     "category": "images/category/dummy_img.png",
-    "thumbnail": "images/category/dummy_img.png",
+    "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이",
     "desc": "귀여운 댕대잉의 동영상입니다",
     "channel": "instagram",
@@ -10,7 +10,7 @@
   },
   {
     "category": "images/category/dummy_img.png",
-    "thumbnail": "images/category/dummy_img.png",
+    "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이2",
     "desc": "귀여운 댕대잉의 동영상입니다",
     "channel": "instagram",
