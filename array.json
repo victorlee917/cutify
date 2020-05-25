@@ -1,6 +1,6 @@
 [
   {
-    "category": "images/category/dummy_img.png",
+    "category": "Dog",
     "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이",
     "desc": "귀여운 댕대잉의 동영상입니다",
@@ -9,7 +9,7 @@
     "url": "https://google.com"
   },
   {
-    "category": "images/category/dummy_img.png",
+    "category": "Cat",
     "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이",
     "desc": "귀여운 댕대잉의 동영상입니다",
@@ -18,7 +18,7 @@
     "url": "https://google.com"
   },
   {
-    "category": "images/category/dummy_img.png",
+    "category": "Dog",
     "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이",
     "desc": "귀여운 댕대잉의 동영상입니다",
@@ -27,7 +27,7 @@
     "url": "https://google.com"
   },
   {
-    "category": "images/category/dummy_img.png",
+    "category": "Cat",
     "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이",
     "desc": "귀여운 댕대잉의 동영상입니다",
@@ -36,7 +36,7 @@
     "url": "https://google.com"
   },
   {
-    "category": "images/category/dummy_img.png",
+    "category": "Dog",
     "image": "images/category/dummy_img.png",
     "title": "귀여운 댕댕이2",
     "desc": "귀여운 댕대잉의 동영상입니다",
