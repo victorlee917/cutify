@@ -26,7 +26,7 @@ const search = () => {
         "url": "${url}",
         "category": "",
         "author": "",
-        "channel": ""
+        "channel": "youtube"
       },`;
       previewUrl.innerHTML = url;
       previewDesc.innerHTML = description;
