@@ -32,6 +32,6 @@ const search = () => {
       previewDesc.innerHTML = description;
       previewImg.innerHTML = image;
       previewTitle.innerHTML = title;
-      previewAll.innerHTML = jsonText;
+      previewAll.value = jsonText;
     });
 };
