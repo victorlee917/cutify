@@ -37,7 +37,6 @@ const search = () => {
           return;
         }
       }
-
       fetch("https://api.linkpreview.net", {
         method: "POST",
         mode: "cors",
