@@ -14,8 +14,8 @@ const search = () => {
   fetch(jsonUrl)
     .then((res) => res.json())
     .then(async (results) => {
-      const checking = (result) => {
-        if (result.url == urlValue) {
+      const checking = (result, title) => {
+        if (result.url == urlValue || result.title == title) {
           return new Promise(function (resolve, reject) {
             resolve(true);
           });
@@ -43,7 +43,19 @@ const search = () => {
         body: JSON.stringify(data),
       })
         .then((res) => res.json())
-        .then((response) => {
+        .then(async (response) => {
+          for (let i = 0; i < results.length; i++) {
+            let result = results[i];
+            const tf = await checking(result, response.title);
+            if (tf) {
+              previewUrl.innerHTML = "already exist";
+              previewDesc.innerHTML = "";
+              previewImg.innerHTML = "";
+              previewTitle.innerHTML = "";
+              previewAll.value = "";
+              return;
+            }
+          }
           const { url, title, description, image } = response;
           let jsonText = `
             {
