@@ -67,3 +67,42 @@ const search = () => {
       throw err;
     });
 };
+
+const Count = () => {
+  const category = ["Dog", "Cat"];
+  let AllLength = document.getElementById("AllLength");
+  let DogLength = document.getElementById("DogLength");
+  let CatLength = document.getElementById("CatLength");
+  let OthersLength = document.getElementById("OthersLength");
+  fetch(jsonUrl)
+    .then((res) => res.json())
+    .then(async (results) => {
+      AllLength.innerHTML = `All-${results.length}개`;
+      let DogArray = [];
+      let CatArray = [];
+      let OthersArray = [];
+      const Filter = (result) => {
+        if (result.category == "Dog") {
+          DogArray = [...DogArray, result];
+        } else if (result.category == "Cat") {
+          CatArray = [...CatArray, result];
+        } else {
+          OthersArray = [...OthersArray, result];
+        }
+        return new Promise(function (resolve, reject) {
+          resolve();
+        });
+      };
+      for (let i = 0; i < results.length; i++) {
+        let result = results[i];
+        await Filter(result);
+      }
+      DogLength.innerHTML = `Dog-${DogArray.length}개`;
+      CatLength.innerHTML = `Cat-${CatArray.length}개`;
+      OthersLength.innerHTML = `Others-${OthersArray.length}개`;
+    });
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  Count();
+});
