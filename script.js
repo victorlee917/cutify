@@ -81,7 +81,6 @@ const search = () => {
 };
 
 const Count = () => {
-  const category = ["Dog", "Cat"];
   let AllLength = document.getElementById("AllLength");
   let DogLength = document.getElementById("DogLength");
   let CatLength = document.getElementById("CatLength");
@@ -116,5 +115,6 @@ const Count = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("why?");
   Count();
 });
